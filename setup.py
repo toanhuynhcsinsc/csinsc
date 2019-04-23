@@ -5,17 +5,17 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="csinsc",
-    version="1.0.0",
+    version="1.0.2",
     author="Toan Huynh",
     author_email="toan@csinschools.io",
     description="Tools and libraries used in the CSinSchools course",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/tba",
+    url="https://github.com/toanhuynhcsinsc/csinsc",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: Creative Commons Attribution-ShareAlike 4.0 International License",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
     ],
 )
