@@ -1,7 +1,7 @@
+from __future__ import print_function
+
 name = "csinsc"
 version = "1.0.0"
-
-from __future__ import print_function
 
 '''
 goto functionality
@@ -397,7 +397,19 @@ class Screen(object):
     self.y = y
 
     #if self.auto_refresh:
-    #  self.refresh()    
+    #  self.refresh()
+
+  def border(self):
+    for x in range(1, self.width - 1):
+      self.screen[0][x] = '-'
+      self.screen[self.height - 1][x] = '-'
+    for y in range(1, self.height - 1):
+      self.screen[y][0] = '|'
+      self.screen[y][self.width - 1] = '|'
+    self.screen[0][0] = '.'
+    self.screen[0][self.width - 1] = '.'
+    self.screen[self.height - 1][0] = '\''
+    self.screen[self.height - 1][self.width - 1] = '\''    
 
   def printAt(self, text, x, y):
     x = int(x)
